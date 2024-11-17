@@ -1,0 +1,8 @@
+'''Made a Japanese flashcard program. There is about 6,000 top used words.
+you have the options to see a new card.
+Deck selection drop down
+Save for a repeat deck and long term deck.
+When in one of your decks you can hit the green check mark if you know you got it right and red x if you got it wrong.
+they just change your card to the next card in that deck. long term is for when you know you have that words locked in.
+
+EXE will be in main directory'''
