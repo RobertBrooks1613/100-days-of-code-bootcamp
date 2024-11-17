@@ -1,0 +1,7 @@
+'''Went little over bored on this one. Made a password manager and took extra steps to learn about cryptogerpy.
+When you first launch the program it will ask for a app password (this will make a salt and hash based off the password)
+and a master password used to view saved password NOTE: dont forgeth your password or you wont be able to unecrypt your password.
+you can search based of website names and files are saved to your c:\user\<your name>. Can open it up but its not readable.
+Note: if your into security or hacking please leave advice im a noob so would like feed back.
+
+EXE included in main directory'''
