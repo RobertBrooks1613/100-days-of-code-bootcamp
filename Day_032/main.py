@@ -20,8 +20,8 @@ testy_boy_dict = testy_boy.to_dict(orient='index')
 birth_day = dt.datetime(month=2, day=25,year=1991)
 
 
-email = "yukitori1613@gmail.com"        # simpledialog.askstring(title="Email", prompt="Enter your email: ")
-password = "nrscawoemrzpxzuv"          # simpledialog.askstring(title="Password", prompt="Enter your password", show='*')
+email = ""        # simpledialog.askstring(title="Email", prompt="Enter your email: ")
+password = ""          # simpledialog.askstring(title="Password", prompt="Enter your password", show='*')
 send_email_to = '' # simpledialog.askstring(title="Email", prompt="Enter the email you want to send to: ")
 
 def check_birth_day():
