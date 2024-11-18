@@ -1,0 +1,3 @@
+''' Learned about smtp and how to use a app password for my own use. 
+program checks the date and will send a happy birthday email if its there birth day.
+program will also check if its monday and send a random quote'''
