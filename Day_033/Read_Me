@@ -1,0 +1,3 @@
+''' Learning about APIs. In this day made a kanye quotes app. ISS locator and for fun went all in on the sunset_sunrise section.
+in the main directory will be a windows consol EXE that will let anyone from multiple timezones to get accrate time returns and positions of the iss to see if its over head.
+if the iss is within 100-500 mile radius and its nighttime it will email you to look up! with promts will give you options on how often it will check it will stay open in a sleep till the next run time.'''
