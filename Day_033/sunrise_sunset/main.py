@@ -135,33 +135,38 @@ while True:
         else:
             quit()
 
+# This section was updated 11/18/2024 to update local time each time it wakes up to give a new time that the program will update.
 from time import sleep
-from datetime import datetime
-at_t_hr = datetime.now().hour
-at_t_min = datetime.now().minute
-
 time_convert = reattempt_time
 time_hours = time_convert // 3600
 time_mins = (time_convert % 3600) // 60
+at_t_hr = 0
+at_t_min = 0
+def time_converter():
+    global at_t_hr, at_t_min
+    from datetime import datetime
+    at_t_hr = datetime.now().hour
+    at_t_min = datetime.now().minute
 
-at_t_hr += time_hours
-at_t_min += time_mins
+    at_t_hr += time_hours
+    at_t_min += time_mins
 
-# Check if minutes exceed 60
-if at_t_min >= 60:
-    at_t_hr += at_t_min // 60
-    at_t_min %= 60
+    # Check if minutes exceed 60
+    if at_t_min >= 60:
+        at_t_hr += at_t_min // 60
+        at_t_min %= 60
 
-# Check if hours exceed 24
-if at_t_hr >= 24:
-    at_t_hr %= 24
-
+    # Check if hours exceed 24
+    if at_t_hr >= 24:
+        at_t_hr %= 24
+time_converter()
 print(f"\n{time_hours}hours, {time_mins}minutes\n")
 if len(user_input) > 0:
     while True:
         run(users_tz=user_input)
         print(f"\nSleeping till the next check.\nnext check at {at_t_hr}:{at_t_min} Zzz... Zzz...\n")
         sleep(reattempt_time)
+        time_converter()
 else:
     exit()
 
