@@ -15,8 +15,8 @@ send_to_email = input("\nwho do you want to send this too?: ")
 clear_console()
 print(f"Email is sending from: {email}\nEmail sending too: {send_to_email}\n")
 
-my_lat = "31.50612282450553"
-my_lng = "-82.85013741481139"
+my_lat = ""
+my_lng = ""
 
 parameter = {
     "lat":my_lat,
